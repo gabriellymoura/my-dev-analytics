@@ -2,12 +2,12 @@ import { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <div className="flex flex-col text-center border border-black pt-10 pb-10">
-      <p className="text-3xl">
-        <span className="text-red-800">Gabrielly Moura</span> – Frontend
-        Software Engineer.
+    <div className="flex flex-col text-center pt-10 pb-10">
+      <p className="text-4xl font-display">
+        <span className="text-secondary-card font-bold">Gabrielly Moura</span> –
+        Frontend Software Engineer.
       </p>
-      <p>
+      <p className="">
         Experiência em Flutter, React Native, SDK Design, Monorepos e Telemetria
         (RUM).
       </p>

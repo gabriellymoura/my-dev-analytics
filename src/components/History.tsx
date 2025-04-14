@@ -12,7 +12,7 @@ const Item: FC = () => {
 
 const History: FC = () => {
   return (
-    <div className="flex flex-col border  pt-5 pb-5 border-black gap-2">
+    <div className="flex flex-col pt-5 pb-5 gap-2 bg-secondary-card text-black rounded-2xl">
       <Item />
       <Item />
       <Item />

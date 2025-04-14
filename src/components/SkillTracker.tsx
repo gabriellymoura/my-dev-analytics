@@ -11,7 +11,7 @@ const Skill: FC = () => {
 
 const SkillTracker: FC = () => {
   return (
-    <div className="w-full h-auto flex flex-col border border-black p-4 gap-3">
+    <div className="w-full h-auto flex flex-col text-black bg-primary-card rounded-2xl p-4 gap-3">
       <Skill />
       <Skill />
       <Skill />

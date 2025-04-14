@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="flex flex-col w-auto h-screen justify-around mr-5 ml-5">
       <Header />
-      <div className="size-auto flex">
+      <div className="size-auto flex gap-5">
         <SkillTracker />
         <SkillTimer />
       </div>
