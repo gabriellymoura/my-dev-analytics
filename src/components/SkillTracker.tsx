@@ -8,7 +8,7 @@ const Progress: FC<ProgressProps> = ({ progress }) => {
   return (
     <div className=" bg-gray-700/50 h-2 rounded-2xl md:h-5">
       <div
-        style={{ "--progress": `${progress}%` }}
+        style={{ "--progress": `${progress}%` } as React.CSSProperties}
         className="w-[var(--progress)] bg-progress-bar h-2 rounded-2xl md:h-5"
       />
     </div>
