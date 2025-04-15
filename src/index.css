@@ -3,21 +3,21 @@
 
 
 @theme {
-  --color-primary: #0C0A09;
-  --color-secondary: #2a9d8f;
-  --color-text-primary: #e9c46a;
-  --color-primary-card: #FCD34D	;
-  --color-secondary-card: #7C3AED;
-  --color-text-neutral: #A8A29E;
-  --color-text-neutral: #E7E5E4;
-  --color-error: #F87171;
+  --color-primary-bg: #0D0D0D;
+  --color-card-bg: #1A1A1A;
+  --color-primary-text: #F5F5F5;
+  --color-secondary-text: #9CA3AF;
+  --color-primary-accent: #7C3AED;
+  --color-secondary-accent: #F59E0B;
+  --color-error: #EF4444;
+  --color-progress-bar: #10B981;
   --font-display: 'Inter', 'sans-serif';
    
 }
 
 body {
-  background-color: var(--color-primary);
-  color: var(--color-text-neutral);
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-text);
   font-family: var(--font-display);
 
 }

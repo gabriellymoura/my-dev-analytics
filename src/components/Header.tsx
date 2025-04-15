@@ -4,7 +4,7 @@ const Header: FC = () => {
   return (
     <div className="flex flex-col text-center pt-10 pb-10">
       <p className="text-4xl font-display">
-        <span className="text-secondary-card font-bold">Gabrielly Moura</span> –
+        <span className="text-primary-accent font-bold">Gabrielly Moura</span> –
         Frontend Software Engineer.
       </p>
       <p className="">

@@ -2,7 +2,14 @@
     "skills_learning": [
         { "name": "React", "level": "Avançado", "progress": 80 },
         { "name": "Flutter", "level": "Aprendendo", "progress": 30 },
-        { "name": "React-Native", "level": "Aprendendo", "progress": 40 }
+        { "name": "React-Native", "level": "Aprendendo", "progress": 40 },
+        { "name": "React", "level": "Avançado", "progress": 80 },
+        { "name": "Flutter", "level": "Aprendendo", "progress": 30 }
+    ],
+    "skills_timing": [
+        { "activity": "Front-end",  "time": 80 },
+        { "activity": "AWS", "time": 30 },
+        { "activity": "Testes","time": 40 }
     ],
     "history": [
         { "description": "VPC and VPN configuration in AWS", "date": "2025-04-15T11:35:39.976Z" },
