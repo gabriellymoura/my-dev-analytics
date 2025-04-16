@@ -1,14 +1,16 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
+import { HistoryData } from "../types";
+import { getFromAPI } from "../utils";
 
 interface ItemProps {
-  description: string;
-  date: string;
+  description: HistoryData["description"];
+  date: HistoryData["date"];
 }
 
 const Item: FC<ItemProps> = ({ date, description }) => {
   return (
     <div className="flex flex-row flex-wrap font-bold text-xs md:text-base">
-      <p className="w-[30%] md:w-[10%] text-secondary-accent">
+      <p className="w-[30%] md:w-[15%] text-secondary-accent">
         {new Date(date).toLocaleDateString()}
       </p>
       <p>{description}</p>
@@ -16,18 +18,17 @@ const Item: FC<ItemProps> = ({ date, description }) => {
   );
 };
 
-interface Props {
-  historyData: {
-    description: string;
-    date: string;
-  }[];
-}
+const History: FC = () => {
+  const [history, setHistory] = useState<HistoryData[]>([]);
 
-const History: FC<Props> = ({ historyData }) => {
+  useEffect(() => {
+    getFromAPI("/history", setHistory);
+  }, []);
+
   return (
     <div className="flex flex-col p-5 gap-5 bg-card-bg rounded-2xl h-auto w-[80%] md:w-[60%]">
       <p className="text-base font-bold md:text-2xl">Recent Learnings</p>
-      {historyData.slice(0, 5).map((item, index) => (
+      {history.slice(0, 5).map((item, index) => (
         <Item key={index} date={item.date} description={item.description} />
       ))}
     </div>
